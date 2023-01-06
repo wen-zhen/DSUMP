@@ -41,7 +41,7 @@ with h5py.File(filepath, mode='r') as f:
             all_y.append(longitude[i])
             all_z.append(temp[i])
 
-    # DSUP
+    # DSUMP
     def count_twogs_point_area_clength(mu1,mu2,n1,gs_y1,n2,gs_y2):
         gs_y_max1=np.max(gs_y1)
         gs_y_max2 = np.max(gs_y2)
