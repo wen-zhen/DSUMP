@@ -5,7 +5,6 @@ import matplotlib.pyplot as plt
 from scipy.stats import norm
 from math import radians, cos, sin, asin, sqrt
 
-
 filepath,flight_path,strength,range_low,range_high,interval_x,interval_z=st.getsetting()
 # get max value of bin
 z_max_add=gmz.getmaxz()
@@ -105,5 +104,3 @@ with h5py.File(filepath, mode='r') as f:
 
         sgr1_i, sgr2_i, sgr_i = count_twogs_point_area_clength(mu1, mu2, n1, gs_y1, n2, gs_y2)
         gslist_all.append(sgr_i)
-
-
